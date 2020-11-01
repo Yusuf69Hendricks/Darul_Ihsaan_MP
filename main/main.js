@@ -1,45 +1,35 @@
+// NAVBAR
 function myFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "nav" ) {
-        x.className += " responsive";
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
     } else {
-        x.className = "nav"
+      x.className = "topnav";
     }
+  }
 
-}
-
-
-// COLOR CHNAGE
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     document.getElementById("navbar").style.padding = "0";
-//     document.getElementById("navbar").style.backgroundColor = "white";
-//     document.getElementById("navbar").style.color = "red";
-    
-//     // document.getElementById("navbar").style.font = "#16325b"
-//   } else {
-//     document.getElementById("navbar").style.padding = "0";
-//     document.getElementById("navbar").style.backgroundColor = "#243b75";
-//     document.getElementById("navbar").style.color = "yellow";
-//   }
-// }
-
-// function BtnFunction() {
-//     var dots = document.getElementById("dots");
-//     var moreText = document.getElementById("more");
-//     var btnText = document.getElementById("readmore");
-
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+  }
   
-//     if (dots.style.display === "none") {
-//       dots.style.display = "inline";
-//       btnText.innerHTML = "Read more"; 
-//       moreText.style.display = "none";
-//     } else {
-//       dots.style.display = "none";
-//       btnText.innerHTML = "Read less"; 
-//       moreText.style.display = "inline";
-//     }
-//   }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+//   COLOR CHNAGE
+var myNav= document.getElementById('myTopnav');
+window.onscroll = function () { 
+    "use strict";
+    if (document.body.scrollTop >= 200 || document.documentElement.scrollTop >= 200 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.add("nav-font");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+        myNav.classList.remove("nav-font");
+    }
+};
+// COLOR CHANGE 
+// NAVBAR 

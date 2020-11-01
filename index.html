@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Landing Page Zaio</title>
 </head>
 <body>
     <!-- NAVBAR BAR START -->
    
-   <header class="main-nav">
-    <div class="nav" id="navbar">
-      <div class="links">
-        <a href="index.html"><img src="https://d33wubrfki0l68.cloudfront.net/2a843fab857e8fb26d278fcb886cac1965817bd1/47e81/_next/static/images/logo_white-074711be1d389a1fd25346a5aee10ea5.png" alt="" class="logo" id="logo"></a>
-        
-        <a href="index.html" class="home">Home</a>
-        <a href="#process" >Next-Gen <br> Hiring</a>
-        <a href="#studies" >Case Studies</a>
-        <a href="#faq" >FAQ</a>
-        <button onclick="document.location='#'" class="but">For Learners</button>
-        <button onclick="document.location='#'" >Hire Talent</button>
-        <button onclick="document.location='#'" >Talk to an expert</button>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <!-- TOPNAV  -->
+      <div class="topnav" id="myTopnav">
+        <a href="#"><img src="./images/logo.png" alt=""> </a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+
+       <i class="fa fa-bars"></i>
+        </a>
+<!-- TOPNAV  -->
+
+<!-- SIDENAV  -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
-    </div>
-    </header>
+<!-- SIDENAV  -->
+       
+
+      </div>
+
   
     <!-- NAVBAR END -->
     <!-- 360px -->
@@ -121,7 +131,7 @@
           <div class="case right" data-aos="fade-up" data-aos-delay="600">
             <h3>React/Node JS developer <br>training</h3>
             <p>The LaunchLab training program <br>aims to provide highly skilled <br> React & Node JS developers to <br> the various start ups in the <br>LaunchLab cohorts.</p>
-            <a href="http://"><img src="https://d33wubrfki0l68.cloudfront.net/9c72a63739da8410cabd01d1a9581356624bd9b1/47d1b/_next/static/images/launchlab-02386f32df51bf59a0cb9c538d119434.png" alt="" srcset=""></a>
+            <a href="#"><img src="https://d33wubrfki0l68.cloudfront.net/9c72a63739da8410cabd01d1a9581356624bd9b1/47d1b/_next/static/images/launchlab-02386f32df51bf59a0cb9c538d119434.png" alt="" srcset=""></a>
           </div>
         </div>
     </section>

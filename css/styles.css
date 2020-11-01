@@ -72,7 +72,8 @@ body{
 
 .nav-colored { background-color:#fff}
 .nav-transparent { background-color:transparent;}
-.nav-font{ color: #000;}
+.navfont a{ color: #111;
+font-weight: bold;}
 
 
   /* NAVBAR END  */

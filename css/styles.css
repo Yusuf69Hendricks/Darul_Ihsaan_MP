@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(/images/Abstract-Envelope.svg);
+  background-image: url(../images/Abstract-Envelope.svg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,6 +26,15 @@ a {
   text-decoration: none;
 }
 
+div{
+  margin: 0;
+}
+
+hr{
+  width: 200px;
+  border: 1px solid #05363b;
+  margin-bottom: 70px;
+}
 
 #more {
   display: none;
@@ -64,6 +73,7 @@ a {
   text-decoration: none;
   font-size: 17px;
 }
+
 
 .topnav a:hover:not(.icon) {
   background-color: #ddd;
@@ -162,6 +172,7 @@ a {
   color: #edf5e1;
   font-weight: 700;
   margin-bottom: 24px;
+  text-align: left;
   padding-left: 100px;
 }
 
@@ -200,18 +211,17 @@ a {
 /* HISTORY */
 .history {
   width: 100%;
-  /* height: 450px; */
-  height: 100vh;
+  height: 550px;
+  /* min-height: 100vh; */
   text-align: center;
   background-color: whitesmoke;
+ 
 }
 
 .history h2 {
   font-size: 30px;
   color: #16325b;
-  margin-top: 0;
   padding-top: 70px;
-  padding-bottom: 70px;
   font-weight: bold;
 }
 
@@ -222,6 +232,7 @@ a {
   padding-left: 50px;
   padding-right: 50px;
   word-spacing: 5px;
+  margin: 0;
 }
 /* HISTORY */
 
@@ -231,6 +242,11 @@ a {
   min-height: 500px;
   /* background-color: rgb(236, 240, 254); */
   text-align: center;
+  background-image: url(../images/Pattern-Randomized\ \(1\).svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 .about img {
@@ -249,13 +265,13 @@ a {
   display: flex;
   justify-content: center;
 
+
 }
 
 #about h2 {
   font-size: 30px;
   color: #16325b;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
   font-weight: bold;
   margin: 0;
 }
@@ -302,8 +318,7 @@ a {
   font-size: 30px;
   color: #16325b;
   margin-top: 0;
-  padding-top: 50px;
-  padding-bottom: 70px;
+  padding-top: 70px;
   font-weight: bold;
 }
 
@@ -363,7 +378,7 @@ a {
 #schedule {
   width: 100%;
   min-height: 400px;
-  /* background-color: #ecf0fe; */
+  background-color: #ecf0fe;
   text-align: center;
 }
 
@@ -381,7 +396,7 @@ a {
 }
 
 .schedule a {
-  background-color: lightblue;
+  background-color: #05363b;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -395,13 +410,7 @@ a {
   transform: scale(1.6);
 }
 
-.container{
-  background-image: url(/images/Pattern-Randomized\ \(1\).svg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
+
 /* SCHEDULE END  */
 /* CONTACT  */
 .contact{
@@ -414,8 +423,7 @@ a {
 .contact h2{
   font-size: 30px;
   color: #16325b;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 70px;
   font-weight: bold;
   margin: 0;
 }

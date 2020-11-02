@@ -1,110 +1,134 @@
-
 /* MEDIA QUERIES START */
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-     float: right;
-      display: block;
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
     top: 0;
     padding-right: 40px;
-    }
+  }
 
-    .topnav{
-        display: block;
-        padding-top: 10px;
-    }
+  .topnav {
+    display: block;
+    padding-top: 10px;
   }
-  /* SIDENAV  */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+.process {
+  min-height: 800px;
+}
+  .process-img img{
+    display: none;
   }
-   /* SIDENAV  */
-  
-  /* hero */
-    @media screen and (max-width: 980px) {
-      .hero1,
-      .left,
-      .right,
-      .middle, 
-      .process-img,
-      .process-steps,
-      .progress-info,
-      .description p{
-        width: 100%;
-        text-align: center;
-      }
-  
-      .progress-img{
-        float: none;
-    
-        margin: 0 auto;
-      }
-  
-      .about{
-        margin: 0;
-      }
-  
-      .h-row h1{
-        text-align: left;
-        margin-top: 300px;
-        padding: 20px;
-      }
-      .h-row button{
-        text-align: left;
-        margin: 0;
-        display: block;
-        padding: 20px;
-        margin: 20px;
-        margin-bottom: 150px;
-      }
-  
-      .h-row p{
-        text-align: left;
-        padding: 20px;
-      }
-  
-      .case.middle,
-      .case.right{
-        padding: 0;
-        text-align: center;
-      }
-  
-      .case.right{
-        padding-bottom: 100px;
-      }
-  
-      .faq,
-      .schedule h2,
-      .schedule p{
-        padding: 20px;
-        text-align: center;
-      }
-  
-      .schedule button{
-        margin-bottom: 100px;
-      }
-  
-  
-      .progress-info,.process-steps{
-        padding: 20px;
-        text-align: center;
-      }
-      .progress-info br{
-        display: none;
-      }
-  
-      .footer a{
-        display: block;
-        padding: 0;
-        line-height: 25px;
-      }
-      .footer p{
-        padding-bottom: 20px;
-      }
-  
-      .hero2{
-          display: none;
-      }
-    }
-  /* MEDIA QUERIES END */
+
+  .process h3{
+    padding: 0;
+  }
+}
+/* SIDENAV  */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* SIDENAV  */
+
+/* hero */
+@media screen and (max-width: 980px) {
+  .hero1,
+  .left,
+  .right,
+  .middle,
+  .process-img,
+  .process-steps,
+  .progress-info,
+  .description p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about {
+    display: block;
+  }
+
+  .progress-img {
+    float: none;
+
+    margin: 0 auto;
+  }
+
+  .about {
+    margin: 0;
+  }
+
+  .h-row h1 {
+    text-align: left;
+    margin-top: 200px;
+    padding: 20px;
+  }
+
+  .h-row h2 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .h-row button {
+    text-align: left;
+    margin: 0;
+    display: block;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 150px;
+  }
+
+  .h-row p {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .case.middle,
+  .case.right {
+    padding: 0;
+    text-align: center;
+  }
+
+  .case.right {
+    padding-bottom: 100px;
+  }
+
+  .faq,
+  .schedule h2,
+  .schedule p {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .schedule button {
+    margin-bottom: 100px;
+  }
+
+  .progress-info,
+  .process-steps {
+    padding: 20px;
+    text-align: center;
+  }
+  .progress-info br {
+    display: none;
+  }
+
+  .footer a {
+    display: block;
+    padding: 0;
+    line-height: 25px;
+  }
+  .footer p {
+    padding-bottom: 20px;
+  }
+
+  .hero2 {
+    display: none;
+  }
+}
+/* MEDIA QUERIES END */

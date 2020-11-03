@@ -14,14 +14,14 @@
     display: block;
     padding-top: 10px;
   }
-.process {
-  min-height: 800px;
-}
-  .process-img img{
+  .process {
+    min-height: 800px;
+  }
+  .process-img img {
     display: none;
   }
 
-  .process h3{
+  .process h3 {
     padding: 0;
   }
 }
@@ -45,7 +45,8 @@
   .process-img,
   .process-steps,
   .progress-info,
-  .description p {
+  .description p,
+  .his-col {
     width: 100%;
     text-align: center;
   }
@@ -127,7 +128,8 @@
     padding-bottom: 20px;
   }
 
-  .hero2 {
+  .hero2,
+  #his-col2 {
     display: none;
   }
 }

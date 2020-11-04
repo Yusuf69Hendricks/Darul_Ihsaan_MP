@@ -1,18 +1,32 @@
 /* MEDIA QUERIES START */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+@media screen and (max-width: 750px) {
+  .nav-right a {
     display: none;
+  }
+  .topnav a:not(.logo) {
+    margin: 0;
   }
   .topnav a.icon {
     float: right;
     display: block;
     top: 0;
-    padding-right: 40px;
+    position: absolute;
+    right: 25px;
+    margin-top: 20px;
   }
 
   .topnav {
     display: block;
     padding-top: 10px;
+  }
+
+  .topnav a:hover{
+    box-shadow: none;
+  }
+
+  .sidenav a{
+    display: block;
+    float: none;
   }
   .process {
     min-height: 800px;

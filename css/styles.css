@@ -32,7 +32,7 @@ div{
 
 hr{
   width: 200px;
-  border: 1px solid #05363b;
+  border: 1px solid #05386b;
   margin-bottom: 70px;
 }
 
@@ -63,26 +63,35 @@ h2{
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 99;
-  transition: background-color 200ms linear;
+  transition: 0.3s;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #05363b;
+  color: #05386b;
   font-weight: bold;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
 }
 
+.topnav a:not(.logo) {
+  margin-right: 50px;
+}
 
-.topnav a:hover:not(.icon) {
+.logo {
+  margin-left: 10px;
+}
+
+.topnav a:hover:not(.logo) {
   background-color: #ddd;
   color: black;
 }
+
 
 .topnav .icon {
   display: none;
@@ -91,6 +100,8 @@ h2{
 .topnav img {
   width: 80px;
 }
+
+
 
 .nav-colored {
   background-color: #fff;
@@ -103,16 +114,20 @@ h2{
   font-weight: bold;
 }
 
+
+
+
 /* NAVBAR END  */
 /* SIDENAV  */
 .sidenav {
-  height: 100%;
+  height: 100vh;
   width: 0;
+  overflow: hidden;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: whitesmoke;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -120,17 +135,13 @@ h2{
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #05386b ;
   display: block;
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
 .sidenav .closebtn {
   position: absolute;
@@ -161,7 +172,7 @@ h2{
 }
 
 .hero1 h1 {
-  font-size: 50px;
+  font-size: 70px;
   color: #edf5e1;
   font-weight: 700;
   padding-top: 200px;
@@ -171,7 +182,7 @@ h2{
 }
 
 .hero1 h2 {
-  font-size: 25px;
+  font-size: 35px;
   color: #edf5e1;
   font-weight: 700;
   margin-bottom: 24px;
@@ -180,9 +191,14 @@ h2{
 }
 
 .hero1 p {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 2px;
   margin-bottom: 16px;
   padding-left: 100px;
-  color: #ddd;
+  color: #edf5e1;
+
+
 }
 
 .hero1 button {
@@ -229,7 +245,7 @@ h2{
 }
 
 .history p {
-  color: #5d646d;
+  color:  #5d646d;
   font-weight: bold;
   font-size: 18px;
   padding-left: 50px;
@@ -245,6 +261,9 @@ h2{
   min-height: 470px;
   margin: 0 auto;
 }
+
+
+
 
 /* HISTORY */
 

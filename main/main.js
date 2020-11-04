@@ -33,4 +33,6 @@ window.onscroll = function () {
 };
 
 // COLOR CHANGE
+
+
 // NAVBAR

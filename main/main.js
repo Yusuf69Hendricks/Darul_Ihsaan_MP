@@ -34,10 +34,4 @@ window.onscroll = function () {
 
 // COLOR CHANGE
 
-// AUTO CLOSE NAVBAR 
-$('.sidenav a').click(function(){
-  $(".sidenav").collapse('hide');
-});
-// AUTO CLOSE NAVBAR
-
 // NAVBAR

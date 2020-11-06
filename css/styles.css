@@ -1,8 +1,8 @@
 /* GLOBAL START */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -28,17 +28,17 @@ a {
   text-decoration: none;
 }
 
-div{
+div {
   margin: 0;
 }
 
-hr{
+hr {
   width: 200px;
   border: 1px solid #05386b;
   margin-bottom: 70px;
 }
 
-h2{
+h2 {
   margin: 0;
 }
 
@@ -79,20 +79,22 @@ h2{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18px;
-  transition: 0.3s;
-  font-family: 'Montserrat', sans-serif;
+  transition: 0.2s;
+  font-family: "Montserrat", sans-serif;
 }
 
-.topnav a:not(.logo) {
-  margin-right: 30px;
-}
+
 
 .logo {
   margin-left: 10px;
 }
 
-.topnav a:hover:not(.logo) {
-  border-bottom: 3px solid #8ee4af;
+.nav-right a:hover {
+  border-bottom: 2px solid #8ee4af;
+}
+
+.nav-right a{
+  margin-right: 30px;
 }
 
 
@@ -104,9 +106,6 @@ h2{
   width: 80px;
 }
 
-
-
-
 .nav-colored {
   background-color: #fff;
 }
@@ -116,9 +115,6 @@ h2{
 .navfont a {
   color: #05386b;
 }
-
-
-
 
 /* NAVBAR END  */
 /* SIDENAV  */
@@ -130,7 +126,7 @@ h2{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: whitesmoke;
+  background-color:rgba(211,211,211,0.5);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -140,21 +136,30 @@ h2{
 .sidenav a {
   text-decoration: none;
   font-size: 25px;
-  color: #05386b ;
+  color: #05386b;
   display: block;
   transition: 0.3s;
+}
+
+.sidenav a:not(.closebtn){
+   line-height: 3;
 }
 
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
+  right: 31px;
+  font-size: 45px;
   margin-left: 50px;
+  padding: 0;
+  margin-top: 20px;
 }
 
 /* SIDENAV  */
+
+
+
 /* HERO START */
 
 .h-row {
@@ -199,9 +204,9 @@ h2{
   border-radius: 2px;
   margin-bottom: 16px;
   padding-left: 100px;
-  color: #edf5e1;
-
-
+  color: #05386b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .hero1 button {
@@ -219,7 +224,8 @@ h2{
   font-size: 15px;
 }
 
-.h-row:after,.his-row {
+.h-row:after,
+.his-row {
   content: "";
   display: table;
   clear: both;
@@ -233,11 +239,10 @@ h2{
 /* HISTORY */
 .history {
   width: 100%;
-  min-height: 700px;
+  min-height: 900px;
   text-align: center;
   background-color: whitesmoke;
   margin: 0;
- 
 }
 
 .history h2 {
@@ -248,7 +253,7 @@ h2{
 }
 
 .history p {
-  color:  #5d646d;
+  color: #5d646d;
   font-weight: bold;
   font-size: 18px;
   padding-left: 50px;
@@ -257,23 +262,21 @@ h2{
   margin: 0;
 }
 
-.his-col{
+.his-col {
   float: left;
   width: 50%;
   padding: 10px;
   min-height: 470px;
   margin: 0 auto;
+  overflow: hidden;
 }
-
-
-
 
 /* HISTORY */
 
 /* ABOUT START */
 #about {
   width: 100%;
-  min-height: 700px;
+  min-height: 750px;
   text-align: center;
   background-image: url(../images/Pattern-Randomized\ \(1\).svg);
   background-attachment: fixed;
@@ -293,19 +296,19 @@ h2{
 
 .about {
   width: 90%;
- min-height: 350px;
+  min-height: 450px;
   text-align: center;
   display: flex;
   justify-content: center;
-margin: 0 auto;
-padding-top: 20px;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
-.container{
+.container {
   width: 90%;
   background-color: whitesmoke;
-  height: 600px;
-margin: 0 auto;
+  height: 650px;
+  margin: 0 auto;
 }
 
 #about h2 {
@@ -318,9 +321,9 @@ margin: 0 auto;
 
 .description {
   float: left;
-  /* height: 300px;  */
-  color: gray;
+  color: #5d646d;
   line-height: 1.8;
+  font-weight: bold;
 }
 
 .description.middle {
@@ -329,10 +332,11 @@ margin: 0 auto;
 }
 
 .description h3 {
-  color: black;
+  color: #05386b;
   font-size: 19px;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .description p {
@@ -365,6 +369,7 @@ margin: 0 auto;
 .process h3 {
   color: #05386b;
   padding-top: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .process p {
@@ -373,7 +378,7 @@ margin: 0 auto;
   /* padding-bottom: 50px; */
 }
 
-.process a{
+.process a {
   color: #05386b;
 }
 
@@ -393,7 +398,7 @@ margin: 0 auto;
 }
 
 .process-steps {
-  padding-left: 200px;
+  padding-left: 100px;
 }
 
 .process:after {
@@ -422,7 +427,7 @@ margin: 0 auto;
 #schedule {
   width: 100%;
   min-height: 500px;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   text-align: center;
 }
 
@@ -441,7 +446,7 @@ margin: 0 auto;
 }
 
 .schedule a {
-  background-color:#05386b;
+  background-color: #05386b;
   color: white;
   padding: 14px 25px;
   text-align: center;
@@ -449,32 +454,50 @@ margin: 0 auto;
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  opacity: 0.6
+  opacity: 0.6;
 }
 
-.schedule a:hover{
-  opacity: 1
+.schedule a:hover {
+  opacity: 1;
 }
-
-
-
 
 /* SCHEDULE END  */
 /* CONTACT  */
-.contact{
+.contact {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   background-color: whitesmoke;
   text-align: center;
+  opacity: 0.9;
+  padding-top: 50px;
+  color: #5d646d;
+  font-weight: bold;
 }
 
-.contact h2{
+.contact h2 {
   font-size: 30px;
   color: #16325b;
   padding-top: 70px;
   font-weight: bold;
   margin: 0;
 }
+
+.contact p {
+  text-align: center;
+}
+
+.contact i {
+  padding-right: 20px;
+  color: #05386b;
+}
+
+.contact-bg {
+  background-color: #fff;
+  width: 90%;
+  height: 400px;
+  margin: 0 auto;
+}
+
 /* CONTACT  */
 /* FOOTER START  */
 #footer {
@@ -485,9 +508,8 @@ margin: 0 auto;
 #footer-img {
   background-image: url(https://d33wubrfki0l68.cloudfront.net/d878614d97021fdeea6d1059797901a56ac871d8/bfc03/_next/static/images/footer-bg-552708bc98446e2327640a16897ccc19.png);
   height: 350px;
-  width: 50%;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   margin-top: 50px;
@@ -500,23 +522,33 @@ margin: 0 auto;
   width: 130px;
   margin-top: 70px;
   margin-bottom: 20px;
-
 }
 
 .footer-nav {
   margin-top: 10px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .footer a {
   color: white;
+  font-size: 18px;
   text-decoration: none;
   text-align: center;
-  padding-right: 25px;
+  padding: 10px;
   font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.footer a:hover {
+  color: #05386b;
+  transform: scale(1.5);
 }
 
 .footer p {
   text-align: center;
-  color: white;
+  color: #05386b;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 /* FOOTER END  */

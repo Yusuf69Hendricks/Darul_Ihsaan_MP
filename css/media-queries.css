@@ -161,10 +161,6 @@
     position: absolute;
   }
 
-  .sidenav a {
-    display: block;
-    float: none;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -230,12 +226,8 @@
 
 /* SIDENAV  */
 @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 /* SIDENAV  */
 
